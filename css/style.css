@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .w1 {
+    color: #f16821;
+  }
+  .w2 {
+    color: #5be7a9;
+  }
+
+  .p1 {
+    color: black;
+  }
+
+  .bawah {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #73a9dc;
+  }
+
+  .u1 {
+    align-items: center;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-image: url('/img/UPS.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .features {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item {
+    margin-bottom: 20px;
+  }
+  
+  .feature-item img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+    
+    nav ul.show {
+      display: flex;
+    }
+    
+    nav ul li {
+      margin: 10px 0;
+    }
+    
+    nav ul li a {
+      padding: 10px;
+      background-color: #1abc9c;
+      color: #fff;
+      border-radius: 5px;
+    }
+    
+    nav ul li a:hover {
+      background-color: #16a085;
+    }
+    
+    .toggle-btn {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    .toggle-btn:hover {
+      background-color: #222;
+    }
+  }
+  
+  

@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.org-chart {
+    text-align: center;
+}
+
+.org-chart ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.org-chart ul ul {
+    margin-left: 50px;
+}
+
+.org-chart .person {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.org-chart .name {
+    font-weight: bold;
+}
+
+.org-chart .person::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.org-chart .person:first-child::before {
+    display: none;
+}
+
+.org-chart ul ul .person::before {
+    display: none;
+}
+
+.org-chart .person::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 20px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.org-chart ul ul .person::after {
+    border-top: none;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 10px;
+    left: -22px;
+    width: 20px;
+    height: 0;
+    z-index: -1;
+}

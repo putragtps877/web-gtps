@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTPS File Host</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            /* background-image: url(/img/UPS.png); */
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #428bca;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .button:hover {
+            background-color: #3276b1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/img/UPS.png" alt="Logo" class="logo">
+        <h1 class="title">How To Play</h1>
+        <p class="description">Look for hosts that match your device</p>
+        <a href="/htp/UPS.hosts" class="button">Android Hosts</a>
+        <p class="button-description">How to Install Android Hosts <b><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=4d4YcUlM_5I&pp=ygURY2FyYWJlcm1iYWluIGd0cHM%3D">is Here </a> </b></p>
+        <a href="/htp/UPS.hosts" class="button">Windows Hosts</a>
+        <p class="button-description">How to Install Windows Hosts <b><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=vaVJQpvNrRM&pp=ygUUY2FyYSBtYWluIGd0cHMgZGkgcGM%3D">is Here </a> </b></p>
+        <button class="button" onclick="copyToClipboard('https://www.ups.my.id/htp/UPS.hosts')">Copy Power Tunnel Hosts</button>
+        <p class="button-description">How to Install Power Tunnel Hosts <b><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=7skoOTlwCAg&pp=ygUbY2FyYSBtYWluIGd0cHMgcG93ZXIgdHVubmVs">is Here </a> </b></p>
+        <a href="https://discord.com/channels/1125019749257056268/1125287001558634507/1125287208006459502" class="button">Ios Hosts</a>
+        <p class="button-description">How to Install Ios Hosts <b><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=a1cSStiIcgg&pp=ygUVY2FyYSBtYWluIGd0cHMgZGkgSW9z">is Here </a> </b></p>
+
+    </div>
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.setAttribute('readonly', '');
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Link Hosts Power Tunnel Copy!')
+        }
+    </script>
+</body>
+</html>

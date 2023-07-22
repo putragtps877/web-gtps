@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTPS IP Address</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #428bca;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background-color: #3276b1;
+        }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.setAttribute('readonly', '');
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">GTPS IP Address</h1>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 growtopia1.com')">Copy IP Address 1</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 growtopia2.com')">Copy IP Address 2</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 www.growtopia1.com')">Copy IP Address 3</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 www.growtopia2.com')">Copy IP Address 4</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 growtopiagame.com')">Copy IP Address 5</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 hamumu.com')">Copy IP Address 6</button>
+        <button class="button" onclick="copyToClipboard('57.128.113.135 rtsoft.com')">Copy IP Address 7</button>
+    </div>
+</body>
+</html>
